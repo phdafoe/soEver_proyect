@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B426F58F202224C100A152A6 /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F58E202224C100A152A6 /* PeliculasViewController.swift */; };
+		B426F5912022266000A152A6 /* AplicacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5902022266000A152A6 /* AplicacionesViewController.swift */; };
+		B426F5932022266A00A152A6 /* LibrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5922022266A00A152A6 /* LibrosViewController.swift */; };
+		B426F5952022267A00A152A6 /* SoEverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5942022267A00A152A6 /* SoEverViewController.swift */; };
+		B426F5972022269800A152A6 /* DetalleGenericoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5962022269800A152A6 /* DetalleGenericoViewController.swift */; };
+		B426F599202226AA00A152A6 /* WebViewGenericoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F598202226AA00A152A6 /* WebViewGenericoViewController.swift */; };
+		B426F59D2022305200A152A6 /* GenericCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F59B2022305200A152A6 /* GenericCell.swift */; };
+		B426F59E2022305200A152A6 /* GenericCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B426F59C2022305200A152A6 /* GenericCell.xib */; };
+		B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */; };
+		B426F5A2202237B700A152A6 /* GenericPerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */; };
+		B426F5A4202239F200A152A6 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */; };
 		B48DDB4B201F93380099BE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48DDB4A201F93380099BE17 /* AppDelegate.swift */; };
-		B48DDB4D201F93380099BE17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48DDB4C201F93380099BE17 /* ViewController.swift */; };
 		B48DDB50201F93380099BE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48DDB4E201F93380099BE17 /* Main.storyboard */; };
 		B48DDB52201F93380099BE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48DDB51201F93380099BE17 /* Assets.xcassets */; };
 		B48DDB55201F93380099BE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48DDB53201F93380099BE17 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B426F58E202224C100A152A6 /* PeliculasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
+		B426F5902022266000A152A6 /* AplicacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AplicacionesViewController.swift; sourceTree = "<group>"; };
+		B426F5922022266A00A152A6 /* LibrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrosViewController.swift; sourceTree = "<group>"; };
+		B426F5942022267A00A152A6 /* SoEverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoEverViewController.swift; sourceTree = "<group>"; };
+		B426F5962022269800A152A6 /* DetalleGenericoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleGenericoViewController.swift; sourceTree = "<group>"; };
+		B426F598202226AA00A152A6 /* WebViewGenericoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewGenericoViewController.swift; sourceTree = "<group>"; };
+		B426F59B2022305200A152A6 /* GenericCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCell.swift; sourceTree = "<group>"; };
+		B426F59C2022305200A152A6 /* GenericCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericCell.xib; sourceTree = "<group>"; };
+		B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPerfilTableViewCell.swift; sourceTree = "<group>"; };
+		B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericPerfilTableViewCell.xib; sourceTree = "<group>"; };
+		B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
 		B48DDB47201F93380099BE17 /* soEver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soEver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48DDB4A201F93380099BE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B48DDB4C201F93380099BE17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B48DDB4F201F93380099BE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B48DDB51201F93380099BE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48DDB54201F93380099BE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +55,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B426F58A202223E500A152A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B426F58B202223F200A152A6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B426F58C202223FE00A152A6 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B426F59A20222FDD00A152A6 /* CELL */,
+				B426F58E202224C100A152A6 /* PeliculasViewController.swift */,
+				B426F5902022266000A152A6 /* AplicacionesViewController.swift */,
+				B426F5922022266A00A152A6 /* LibrosViewController.swift */,
+				B426F5942022267A00A152A6 /* SoEverViewController.swift */,
+				B426F5962022269800A152A6 /* DetalleGenericoViewController.swift */,
+				B426F598202226AA00A152A6 /* WebViewGenericoViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B426F58D2022240400A152A6 /* UTILS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UTILS;
+			sourceTree = "<group>";
+		};
+		B426F59A20222FDD00A152A6 /* CELL */ = {
+			isa = PBXGroup;
+			children = (
+				B426F59B2022305200A152A6 /* GenericCell.swift */,
+				B426F59C2022305200A152A6 /* GenericCell.xib */,
+				B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */,
+				B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */,
+				B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */,
+			);
+			path = CELL;
+			sourceTree = "<group>";
+		};
 		B48DDB3E201F93380099BE17 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +121,11 @@
 		B48DDB49201F93380099BE17 /* soEver */ = {
 			isa = PBXGroup;
 			children = (
+				B426F58D2022240400A152A6 /* UTILS */,
+				B426F58C202223FE00A152A6 /* VC */,
+				B426F58B202223F200A152A6 /* API */,
+				B426F58A202223E500A152A6 /* Models */,
 				B48DDB4A201F93380099BE17 /* AppDelegate.swift */,
-				B48DDB4C201F93380099BE17 /* ViewController.swift */,
 				B48DDB4E201F93380099BE17 /* Main.storyboard */,
 				B48DDB51201F93380099BE17 /* Assets.xcassets */,
 				B48DDB53201F93380099BE17 /* LaunchScreen.storyboard */,
@@ -124,8 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48DDB55201F93380099BE17 /* LaunchScreen.storyboard in Resources */,
+				B426F59E2022305200A152A6 /* GenericCell.xib in Resources */,
 				B48DDB52201F93380099BE17 /* Assets.xcassets in Resources */,
 				B48DDB50201F93380099BE17 /* Main.storyboard in Resources */,
+				B426F5A2202237B700A152A6 /* GenericPerfilTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +208,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48DDB4D201F93380099BE17 /* ViewController.swift in Sources */,
 				B48DDB4B201F93380099BE17 /* AppDelegate.swift in Sources */,
+				B426F59D2022305200A152A6 /* GenericCell.swift in Sources */,
+				B426F599202226AA00A152A6 /* WebViewGenericoViewController.swift in Sources */,
+				B426F5A4202239F200A152A6 /* ReuseIdentifier.swift in Sources */,
+				B426F5912022266000A152A6 /* AplicacionesViewController.swift in Sources */,
+				B426F5972022269800A152A6 /* DetalleGenericoViewController.swift in Sources */,
+				B426F58F202224C100A152A6 /* PeliculasViewController.swift in Sources */,
+				B426F5952022267A00A152A6 /* SoEverViewController.swift in Sources */,
+				B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */,
+				B426F5932022266A00A152A6 /* LibrosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
