@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetalleGenericoViewController: UIViewController {
+class DetalleGenericoViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
