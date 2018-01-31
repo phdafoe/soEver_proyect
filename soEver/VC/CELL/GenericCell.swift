@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GenericCell: UITableViewCell, ReuseIdentifierInterface {
+class GenericCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
