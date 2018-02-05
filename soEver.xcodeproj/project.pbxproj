@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6980A1DB0E8DD2786E56C1D2 /* Pods_soEver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DEB5F9C28C19E2936A845B /* Pods_soEver.framework */; };
 		B426F58F202224C100A152A6 /* PeliculasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F58E202224C100A152A6 /* PeliculasViewController.swift */; };
 		B426F5912022266000A152A6 /* AplicacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5902022266000A152A6 /* AplicacionesViewController.swift */; };
 		B426F5932022266A00A152A6 /* LibrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5922022266A00A152A6 /* LibrosViewController.swift */; };
@@ -18,13 +19,27 @@
 		B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */; };
 		B426F5A2202237B700A152A6 /* GenericPerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */; };
 		B426F5A4202239F200A152A6 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */; };
+		B46C81542028B86600E89122 /* API_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C81532028B86600E89122 /* API_UTILS.swift */; };
+		B46C81562028BCC900E89122 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C81552028BCC900E89122 /* GenericModel.swift */; };
 		B48DDB4B201F93380099BE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48DDB4A201F93380099BE17 /* AppDelegate.swift */; };
 		B48DDB50201F93380099BE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48DDB4E201F93380099BE17 /* Main.storyboard */; };
 		B48DDB52201F93380099BE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48DDB51201F93380099BE17 /* Assets.xcassets */; };
 		B48DDB55201F93380099BE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48DDB53201F93380099BE17 /* LaunchScreen.storyboard */; };
+		B4BF4E9E2028C29000DC2EEE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BF4EA32028C29000DC2EEE /* Alamofire.framework */; };
+		B4BF4E9F2028C29000DC2EEE /* APESuperHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BF4EA42028C29000DC2EEE /* APESuperHUD.framework */; };
+		B4BF4EA02028C29000DC2EEE /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BF4EA52028C29000DC2EEE /* Kingfisher.framework */; };
+		B4BF4EA12028C29000DC2EEE /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BF4EA62028C29000DC2EEE /* PromiseKit.framework */; };
+		B4BF4EA22028C29000DC2EEE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BF4EA72028C29000DC2EEE /* SwiftyJSON.framework */; };
+		B4BF4EA92028C3A500DC2EEE /* API_HELPERS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EA82028C3A500DC2EEE /* API_HELPERS.swift */; };
+		B4BF4EAB2028C7ED00DC2EEE /* ProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */; };
+		B4BF4EAD2028CB5F00DC2EEE /* ParserGenerico.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */; };
+		B4BF4EAF2028D00500DC2EEE /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DB5630262669ED9E02484EA /* Pods-soEver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver.release.xcconfig"; path = "Pods/Target Support Files/Pods-soEver/Pods-soEver.release.xcconfig"; sourceTree = "<group>"; };
+		8887A4AEE0F4B2195154D0B9 /* Pods-soEver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soEver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-soEver/Pods-soEver.debug.xcconfig"; sourceTree = "<group>"; };
+		95DEB5F9C28C19E2936A845B /* Pods_soEver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soEver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B426F58E202224C100A152A6 /* PeliculasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasViewController.swift; sourceTree = "<group>"; };
 		B426F5902022266000A152A6 /* AplicacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AplicacionesViewController.swift; sourceTree = "<group>"; };
 		B426F5922022266A00A152A6 /* LibrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrosViewController.swift; sourceTree = "<group>"; };
@@ -36,12 +51,23 @@
 		B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPerfilTableViewCell.swift; sourceTree = "<group>"; };
 		B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericPerfilTableViewCell.xib; sourceTree = "<group>"; };
 		B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		B46C81532028B86600E89122 /* API_UTILS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_UTILS.swift; sourceTree = "<group>"; };
+		B46C81552028BCC900E89122 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
 		B48DDB47201F93380099BE17 /* soEver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soEver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48DDB4A201F93380099BE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48DDB4F201F93380099BE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B48DDB51201F93380099BE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48DDB54201F93380099BE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48DDB56201F93380099BE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4BF4EA32028C29000DC2EEE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BF4EA42028C29000DC2EEE /* APESuperHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APESuperHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BF4EA52028C29000DC2EEE /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BF4EA62028C29000DC2EEE /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BF4EA72028C29000DC2EEE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BF4EA82028C3A500DC2EEE /* API_HELPERS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_HELPERS.swift; sourceTree = "<group>"; };
+		B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderService.swift; sourceTree = "<group>"; };
+		B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserGenerico.swift; sourceTree = "<group>"; };
+		B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,15 +75,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BF4E9E2028C29000DC2EEE /* Alamofire.framework in Frameworks */,
+				B4BF4E9F2028C29000DC2EEE /* APESuperHUD.framework in Frameworks */,
+				B4BF4EA02028C29000DC2EEE /* Kingfisher.framework in Frameworks */,
+				B4BF4EA12028C29000DC2EEE /* PromiseKit.framework in Frameworks */,
+				B4BF4EA22028C29000DC2EEE /* SwiftyJSON.framework in Frameworks */,
+				6980A1DB0E8DD2786E56C1D2 /* Pods_soEver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B14C3FA97C6CB02BC511926 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8887A4AEE0F4B2195154D0B9 /* Pods-soEver.debug.xcconfig */,
+				0DB5630262669ED9E02484EA /* Pods-soEver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C2C26110618E6A2270D769C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4BF4EA32028C29000DC2EEE /* Alamofire.framework */,
+				B4BF4EA42028C29000DC2EEE /* APESuperHUD.framework */,
+				B4BF4EA52028C29000DC2EEE /* Kingfisher.framework */,
+				B4BF4EA62028C29000DC2EEE /* PromiseKit.framework */,
+				B4BF4EA72028C29000DC2EEE /* SwiftyJSON.framework */,
+				95DEB5F9C28C19E2936A845B /* Pods_soEver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B426F58A202223E500A152A6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B46C81552028BCC900E89122 /* GenericModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -65,6 +120,10 @@
 		B426F58B202223F200A152A6 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B46C81532028B86600E89122 /* API_UTILS.swift */,
+				B4BF4EA82028C3A500DC2EEE /* API_HELPERS.swift */,
+				B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */,
+				B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -98,6 +157,7 @@
 				B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */,
 				B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */,
 				B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */,
+				B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */,
 			);
 			path = CELL;
 			sourceTree = "<group>";
@@ -107,6 +167,8 @@
 			children = (
 				B48DDB49201F93380099BE17 /* soEver */,
 				B48DDB48201F93380099BE17 /* Products */,
+				3B14C3FA97C6CB02BC511926 /* Pods */,
+				7C2C26110618E6A2270D769C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B48DDB59201F93380099BE17 /* Build configuration list for PBXNativeTarget "soEver" */;
 			buildPhases = (
+				8C0B432FE9CF69C7387A7F66 /* [CP] Check Pods Manifest.lock */,
 				B48DDB43201F93380099BE17 /* Sources */,
 				B48DDB44201F93380099BE17 /* Frameworks */,
 				B48DDB45201F93380099BE17 /* Resources */,
+				3243A49196021B28C0BA5C66 /* [CP] Embed Pods Frameworks */,
+				7426F9006EDF6D44DE701E90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +268,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3243A49196021B28C0BA5C66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-soEver/Pods-soEver-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APESuperHUD/APESuperHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APESuperHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soEver/Pods-soEver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7426F9006EDF6D44DE701E90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-soEver/Pods-soEver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C0B432FE9CF69C7387A7F66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soEver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B48DDB43201F93380099BE17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -211,9 +338,15 @@
 				B48DDB4B201F93380099BE17 /* AppDelegate.swift in Sources */,
 				B426F59D2022305200A152A6 /* GenericCell.swift in Sources */,
 				B426F599202226AA00A152A6 /* WebViewGenericoViewController.swift in Sources */,
+				B46C81562028BCC900E89122 /* GenericModel.swift in Sources */,
+				B4BF4EA92028C3A500DC2EEE /* API_HELPERS.swift in Sources */,
+				B46C81542028B86600E89122 /* API_UTILS.swift in Sources */,
+				B4BF4EAD2028CB5F00DC2EEE /* ParserGenerico.swift in Sources */,
+				B4BF4EAB2028C7ED00DC2EEE /* ProviderService.swift in Sources */,
 				B426F5A4202239F200A152A6 /* ReuseIdentifier.swift in Sources */,
 				B426F5912022266000A152A6 /* AplicacionesViewController.swift in Sources */,
 				B426F5972022269800A152A6 /* DetalleGenericoViewController.swift in Sources */,
+				B4BF4EAF2028D00500DC2EEE /* MovieCustomCell.swift in Sources */,
 				B426F58F202224C100A152A6 /* PeliculasViewController.swift in Sources */,
 				B426F5952022267A00A152A6 /* SoEverViewController.swift in Sources */,
 				B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */,
@@ -352,6 +485,7 @@
 		};
 		B48DDB5A201F93380099BE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8887A4AEE0F4B2195154D0B9 /* Pods-soEver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,6 +501,7 @@
 		};
 		B48DDB5B201F93380099BE17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB5630262669ED9E02484EA /* Pods-soEver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
