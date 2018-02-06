@@ -2,7 +2,6 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Captura de pantalla 2018-01-24 a las 9.02.38.png",
       "scale" : "1x"
     },
     {
@@ -11,11 +10,15 @@
     },
     {
       "idiom" : "universal",
+      "filename" : "happy_face_icon.pdf",
       "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
   }
 }
