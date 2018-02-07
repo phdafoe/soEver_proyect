@@ -24,3 +24,22 @@ public func dimeString(_ json: JSON, nombre : String) -> String{
         return ""
     }
 }
+
+
+public func randomIdNumber() -> String{
+    let arrayNumber = 1 + Int(arc4random_uniform(100))
+    return "\(arrayNumber)"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

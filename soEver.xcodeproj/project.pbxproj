@@ -19,6 +19,7 @@
 		B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */; };
 		B426F5A2202237B700A152A6 /* GenericPerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */; };
 		B426F5A4202239F200A152A6 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */; };
+		B43C0947202A116600DEE851 /* EVERISRellenarCeldas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C0946202A116600DEE851 /* EVERISRellenarCeldas.swift */; };
 		B46C81542028B86600E89122 /* API_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C81532028B86600E89122 /* API_UTILS.swift */; };
 		B46C81562028BCC900E89122 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C81552028BCC900E89122 /* GenericModel.swift */; };
 		B48DDB4B201F93380099BE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48DDB4A201F93380099BE17 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		B426F59F202237B700A152A6 /* GenericPerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPerfilTableViewCell.swift; sourceTree = "<group>"; };
 		B426F5A0202237B700A152A6 /* GenericPerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericPerfilTableViewCell.xib; sourceTree = "<group>"; };
 		B426F5A3202239F200A152A6 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		B43C0946202A116600DEE851 /* EVERISRellenarCeldas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVERISRellenarCeldas.swift; sourceTree = "<group>"; };
 		B46C81532028B86600E89122 /* API_UTILS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_UTILS.swift; sourceTree = "<group>"; };
 		B46C81552028BCC900E89122 /* GenericModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
 		B48DDB47201F93380099BE17 /* soEver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soEver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				B4BF4EA82028C3A500DC2EEE /* API_HELPERS.swift */,
 				B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */,
 				B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */,
+				B43C0946202A116600DEE851 /* EVERISRellenarCeldas.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				B426F58F202224C100A152A6 /* PeliculasViewController.swift in Sources */,
 				B426F5952022267A00A152A6 /* SoEverViewController.swift in Sources */,
 				B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */,
+				B43C0947202A116600DEE851 /* EVERISRellenarCeldas.swift in Sources */,
 				B426F5932022266A00A152A6 /* LibrosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

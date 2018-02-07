@@ -9,7 +9,18 @@
 import UIKit
 
 class GenericCell: UITableViewCell, ReuseIdentifierInterface {
-
+    
+    
+    //MARK: - IBOutltes
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var myNome: UILabel!
+    @IBOutlet weak var myPrice: UILabel!
+    @IBOutlet weak var myDate: UILabel!
+    @IBOutlet weak var mySummary: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

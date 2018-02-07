@@ -81,6 +81,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myDate" destination="0dC-PE-ypl" id="yn5-ya-m3d"/>
+                <outlet property="myImageView" destination="Xfu-34-DZJ" id="z6q-8v-4I0"/>
+                <outlet property="myNome" destination="Amx-uw-blp" id="Oi1-7y-nhV"/>
+                <outlet property="myPrice" destination="zpb-e2-daH" id="aT0-Ck-0mg"/>
+                <outlet property="mySummary" destination="q5m-oY-VAL" id="iJf-ZH-yK8"/>
+            </connections>
             <point key="canvasLocation" x="-25" y="245.5"/>
         </tableViewCell>
     </objects>

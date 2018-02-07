@@ -12,6 +12,7 @@ import SwiftyJSON
 
 let CONSTANTES = Constantes()
 var jsonDataGenerico : JSON?
+var diccionarioImagenes = [String : UIImage?]()
 
 struct Constantes {
     let COLORES = Colores()
