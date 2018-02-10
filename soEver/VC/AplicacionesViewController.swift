@@ -16,6 +16,7 @@ class AplicacionesViewController: UIViewController {
     //MARK: - Properties
     var arrayGenerico : [GenericModel] = []
     var refresh = UIRefreshControl()
+    var customCell : GenericCell?
     
     //MARK: - IBOulets
     @IBOutlet weak var myTableView: UITableView!
@@ -74,7 +75,16 @@ class AplicacionesViewController: UIViewController {
                 print(error.localizedDescription)
         }
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailFromApps"{
+            let detalleVC = segue.destination as! DetalleGenericoViewController
+            let selectId = myTableView.indexPathForSelectedRow?.row
+            let objcId = arrayGenerico[selectId!]
+            detalleVC.dataModel = objcId
+            detalleVC.detalleImage = diccionarioImagenes[objcId.id!]!
+        }
+    }
 
 }
 
@@ -91,8 +101,9 @@ extension AplicacionesViewController : UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let modelData = arrayGenerico[indexPath.row]
-        let customcell = myTableView.dequeueReusableCell(withIdentifier: GenericCell.defaultIdentifier, for: indexPath) as! GenericCell
+        var customcell = myTableView.dequeueReusableCell(withIdentifier: GenericCell.defaultIdentifier, for: indexPath) as! GenericCell
         let cell = EVERISRellenarCeldas().tipoGeneric(customcell,arrayGenerico: modelData,row: indexPath.row)
+        customcell = cell
         return cell
     }
     
@@ -101,7 +112,8 @@ extension AplicacionesViewController : UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        imagenSeleccionada = customCell?.myImageView.image
+        performSegue(withIdentifier: "showDetailFromApps", sender: self)
     }
     
     

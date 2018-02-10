@@ -137,6 +137,7 @@
                     <navigationItem key="navigationItem" id="vGT-e3-pcY"/>
                     <connections>
                         <outlet property="myTableView" destination="dZV-ae-HhG" id="8AH-Mm-KXh"/>
+                        <segue destination="gtd-uF-5RZ" kind="show" identifier="showDetailFromApps" id="BZN-Ky-8wQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWJ-R9-kaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,7 +171,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
-                                                    <blurEffect style="light"/>
+                                                    <blurEffect style="dark"/>
                                                 </visualEffectView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-X5-7Zr">
                                                     <rect key="frame" x="10" y="8" width="155" height="215"/>
@@ -283,7 +284,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rn2-Hi-q7k">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rn2-Hi-q7k">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -706,4 +707,7 @@
         <image name="icon_soever" width="35" height="35"/>
         <image name="placeholder" width="1280" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="BZN-Ky-8wQ"/>
+    </inferredMetricsTieBreakers>
 </document>
