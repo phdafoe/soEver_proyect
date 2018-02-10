@@ -12,9 +12,9 @@ import Kingfisher
 public class EVERISRellenarCeldas{
     
     func tipoGenericColletionView(_ customCell : MovieCustomCell, arrayGenerico : GenericModel, row : Int) -> MovieCustomCell{
-        customCell.myValueData.text = arrayGenerico.rentalPrice
-        customCell.myLabelData.text = arrayGenerico.category
-        if let pathImage = arrayGenerico.image{
+        customCell.myValueData.text = arrayGenerico.artistName
+        customCell.myLabelData.text = arrayGenerico.kind
+        if let pathImage = arrayGenerico.artworkUrl100{
             customCell.myImageViewMovie.kf.setImage(with: ImageResource(downloadURL: URL(string: pathImage)!),
                                                     placeholder: #imageLiteral(resourceName: "placeholder"),
                                                     options: [.transition(ImageTransition.fade(1))],
@@ -29,11 +29,11 @@ public class EVERISRellenarCeldas{
     }
     
     func tipoGeneric(_ customCell : GenericCell, arrayGenerico : GenericModel, row : Int) -> GenericCell{
-        customCell.myNome.text = arrayGenerico.category
-        customCell.myPrice.text = arrayGenerico.rentalPrice
+        customCell.myNome.text = arrayGenerico.kind
+        customCell.myPrice.text = arrayGenerico.artistName
         customCell.myDate.text = arrayGenerico.releaseDate
-        customCell.mySummary.text = arrayGenerico.summary
-        if let pathImage = arrayGenerico.image{
+        customCell.mySummary.text = arrayGenerico.url
+        if let pathImage = arrayGenerico.artworkUrl100{
             customCell.myImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: pathImage)!),
                                                     placeholder: #imageLiteral(resourceName: "placeholder"),
                                                     options: [.transition(ImageTransition.fade(1))],

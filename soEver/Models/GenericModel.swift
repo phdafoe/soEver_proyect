@@ -12,24 +12,32 @@ import SwiftyJSON
 struct GenericModel {
     
     var id : String?
-    var title : String?
-    var summary : String?
-    var image : String?
-    var category : String?
-    var director : String?
+    var name : String?
+    var artworkUrl100 : String?
+    var kind : String?
+    var artistName : String?
     var releaseDate : String?
-    var rentalPrice : String?
-    var link : String?
+    var url : String?
+    var genres : [Genres]?
     
     init(json : JSON) {
-        self.id = dimeString(json["id"]["attributes"], nombre: "im:id")
-        self.title = dimeString(json["im:name"], nombre: "label")
-        self.summary = dimeString(json["summary"], nombre: "label")
-        self.image = dimeString(json["im:image"][2], nombre: "label").replacingOccurrences(of:"170x170", with:"500x500")
-        self.category = dimeString(json["category"]["attributes"], nombre: "label")
-        self.director = dimeString(json["im:artist"], nombre: "label")
-        self.releaseDate = dimeString(json["im:releaseDate"], nombre: "label")
-        self.rentalPrice = dimeString(json["im:price"], nombre: "label")
-        self.link = dimeString(json["link"][0]["attributes"], nombre: "href")
+        self.id = dimeString(json, nombre: "id")
+        self.name = dimeString(json, nombre: "name")
+        self.artworkUrl100 = dimeString(json, nombre: "artworkUrl100").replacingOccurrences(of:"200x200", with:"600x600")
+        self.kind = dimeString(json, nombre: "kind")
+        self.artistName = dimeString(json, nombre: "artistName")
+        self.releaseDate = dimeString(json, nombre: "releaseDate")
+        self.url = dimeString(json, nombre: "url")
+        self.genres = [Genres.init(json: json["genres"])]
+    }
+}
+
+struct Genres {
+    var name : String?
+    var url : String?
+    
+    init(json : JSON) {
+        self.name = dimeString(json, nombre: "name")
+        self.url = dimeString(json, nombre: "url")
     }
 }

@@ -13,6 +13,7 @@ import Alamofire
 
 class ProviderService: NSObject {
 
+    @available(*, deprecated, message : "data not found")
     func getServiceData(_ idName: String, idCountry : String, idNumber : String) -> Promise<JSON>{
         
         let format = CONSTANTES.LLAMADA.BASE_URL_APPLE
@@ -23,7 +24,23 @@ class ProviderService: NSObject {
             jsonDataGenerico = JSON(data)
             return jsonDataGenerico!
         }
+    }
+    
+    func getServiceData(_ idCountry : String, idFirstPath : String, idSecondPath : String, idNumber : String) -> Promise<JSON>{
+        let format = CONSTANTES.LLAMADA.BASE_URL_APPLE_2018
+        let arguments : [CVarArg] = [idCountry, idFirstPath, idSecondPath, idNumber]
+        let urlString = String(format: format, arguments: arguments)
+        let urlRequest = URLRequest(url: URL(string: urlString)!)
+        return Alamofire.request(urlRequest).responseJSON().then(execute: { (data) -> JSON in
+            jsonDataGenerico = JSON(data)
+            return jsonDataGenerico!
+        })
         
     }
     
 }
+
+
+
+
+

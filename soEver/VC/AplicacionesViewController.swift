@@ -50,22 +50,18 @@ class AplicacionesViewController: UIViewController {
     func llamadaGenerica(){
         let provider = ProviderService()
         let parser = ParserGenerico()
-        let idName = "topfreeapplications"
-        let idCountry = "us"
-        
         
         APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard,
                                     message: "Loading",
                                     presentingView: self.view)
         firstly{
-            return when(resolved: provider.getServiceData(idName,
-                                                          idCountry: idCountry,
+            return when(resolved: provider.getServiceData(randomIdCountry(),
+                                                          idFirstPath: CONSTANTES.ARGUMENTOS.APPS_IOS_FIRST_PATH,
+                                                          idSecondPath: CONSTANTES.ARGUMENTOS.APPS_IOS_SECOND_PATH,
                                                           idNumber: randomIdNumber()))
             }.then{_ in
                 parser.getGenericParser({ [weak self] (result) in
-                    //guard let resultDes = result else { return }
-                    self?.arrayGenerico = result
-                    print(result)
+                     self?.arrayGenerico = result
                     DispatchQueue.main.async {
                         self?.myTableView.reloadData()
                     }
@@ -77,11 +73,6 @@ class AplicacionesViewController: UIViewController {
             }.catch{error in
                 print(error.localizedDescription)
         }
-        
-        
-        
-        
-        
     }
 
 

@@ -13,10 +13,12 @@ import SwiftyJSON
 let CONSTANTES = Constantes()
 var jsonDataGenerico : JSON?
 var diccionarioImagenes = [String : UIImage?]()
+var imagenSeleccionada : UIImage?
 
 struct Constantes {
     let COLORES = Colores()
     let LLAMADA = Llamadas()
+    let ARGUMENTOS = Argumentos()
 }
 
 struct Colores {
@@ -26,5 +28,20 @@ struct Colores {
 
 struct Llamadas {
     let BASE_URL_APPLE = "https://itunes.apple.com/%@/rss/%@/limit=%@/json"
-    //let LAST_PATH_COMPONENT = "/limit=50/json"
+    let BASE_URL_APPLE_2018 = "https://rss.itunes.apple.com/api/v1/%@/%@/%@/all/%@/explicit.json"
 }
+
+struct Argumentos {
+    let APPS_IOS_FIRST_PATH = "ios-apps"
+    let APPS_IOS_SECOND_PATH = "new-apps-we-love"
+    let BOOKS_FIRST_PATH = "books"
+    let BOOKS_SECOND_PATH = "top-free"
+    let MOVIES_FIRST_PATH = "movies"
+    let MOVIES_SECOND_PATH = "top-movies"
+    let VIDEOS_FIRST_PATH = "music-videos"
+    let VIDEOS_SECOND_PATH = "top-music-videos"
+
+
+}
+
+

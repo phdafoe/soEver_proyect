@@ -16,6 +16,7 @@ class PeliculasViewController: UIViewController {
     //MARK: - Properties
     var arrayGenerico : [GenericModel] = []
     var refresh = UIRefreshControl()
+    var customCell : MovieCustomCell?
     
     //MARK: - IBOutlets
     @IBOutlet weak var myCollectionView: UICollectionView!
@@ -46,20 +47,17 @@ class PeliculasViewController: UIViewController {
     func llamadaGenerica(){
         let provider = ProviderService()
         let parser = ParserGenerico()
-        let idName = "topmovies"
-        let idCountry = "es"
-        
         
         APESuperHUD.showOrUpdateHUD(loadingIndicator: .standard,
                                     message: "Loading",
                                     presentingView: self.view)
         firstly{
-            return when(resolved: provider.getServiceData(idName,
-                                                          idCountry: idCountry,
-                                                          idNumber: randomIdNumber()))
+            return when(resolved: provider.getServiceData(randomIdCountry(),
+                                                               idFirstPath: CONSTANTES.ARGUMENTOS.MOVIES_FIRST_PATH,
+                                                               idSecondPath: CONSTANTES.ARGUMENTOS.MOVIES_SECOND_PATH,
+                                                               idNumber: randomIdNumber()))
             }.then{_ in
                 parser.getGenericParser({ [weak self] (result) in
-                    //guard let resultDes = result else { return }
                     self?.arrayGenerico = result
                     print(result)
                     DispatchQueue.main.async {
@@ -73,12 +71,19 @@ class PeliculasViewController: UIViewController {
             }.catch{error in
                 print(error.localizedDescription)
         }
-        
-        
-        
-        
-        
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailFromMovie"{
+            let detalleVC = segue.destination as! DetalleGenericoViewController
+            let selectId = myCollectionView.indexPathsForSelectedItems?.first?.row
+            let objcId = arrayGenerico[selectId ?? 0]
+            detalleVC.dataModel = objcId
+            detalleVC.detalleImage = diccionarioImagenes[objcId.id!]!
+        }
+    }
+    
     
 
 }
@@ -104,11 +109,13 @@ extension PeliculasViewController : UICollectionViewDelegate, UICollectionViewDa
         let cell = EVERISRellenarCeldas().tipoGenericColletionView(customcell,
                                                                    arrayGenerico: modelData,
                                                                    row: indexPath.row)
+        customCell = cell
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        imagenSeleccionada = customCell?.myImageViewMovie.image
+        performSegue(withIdentifier: "showDetailFromMovie", sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView,
