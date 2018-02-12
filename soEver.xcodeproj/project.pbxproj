@@ -35,6 +35,8 @@
 		B4BF4EAB2028C7ED00DC2EEE /* ProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */; };
 		B4BF4EAD2028CB5F00DC2EEE /* ParserGenerico.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */; };
 		B4BF4EAF2028D00500DC2EEE /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */; };
+		B4D644CD2031F5BA009AE328 /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D644CC2031F5BA009AE328 /* HomeNavigationViewController.swift */; };
+		B4D644CF2031F662009AE328 /* HerramientaPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D644CE2031F662009AE328 /* HerramientaPostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderService.swift; sourceTree = "<group>"; };
 		B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserGenerico.swift; sourceTree = "<group>"; };
 		B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
+		B4D644CC2031F5BA009AE328 /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
+		B4D644CE2031F662009AE328 /* HerramientaPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerramientaPostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 				B426F5942022267A00A152A6 /* SoEverViewController.swift */,
 				B426F5962022269800A152A6 /* DetalleGenericoViewController.swift */,
 				B426F598202226AA00A152A6 /* WebViewGenericoViewController.swift */,
+				B4D644CC2031F5BA009AE328 /* HomeNavigationViewController.swift */,
+				B4D644CE2031F662009AE328 /* HerramientaPostTableViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -348,11 +354,13 @@
 				B4BF4EAB2028C7ED00DC2EEE /* ProviderService.swift in Sources */,
 				B426F5A4202239F200A152A6 /* ReuseIdentifier.swift in Sources */,
 				B426F5912022266000A152A6 /* AplicacionesViewController.swift in Sources */,
+				B4D644CF2031F662009AE328 /* HerramientaPostTableViewController.swift in Sources */,
 				B426F5972022269800A152A6 /* DetalleGenericoViewController.swift in Sources */,
 				B4BF4EAF2028D00500DC2EEE /* MovieCustomCell.swift in Sources */,
 				B426F58F202224C100A152A6 /* PeliculasViewController.swift in Sources */,
 				B426F5952022267A00A152A6 /* SoEverViewController.swift in Sources */,
 				B426F5A1202237B700A152A6 /* GenericPerfilTableViewCell.swift in Sources */,
+				B4D644CD2031F5BA009AE328 /* HomeNavigationViewController.swift in Sources */,
 				B43C0947202A116600DEE851 /* EVERISRellenarCeldas.swift in Sources */,
 				B426F5932022266A00A152A6 /* LibrosViewController.swift in Sources */,
 			);

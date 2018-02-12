@@ -13,6 +13,7 @@ import Alamofire
 
 class ProviderService: NSObject {
 
+    
     @available(*, deprecated, message : "data not complete only in topmovie")
     func getServiceData(_ idName: String, idCountry : String, idNumber : String) -> Promise<JSON>{
         
@@ -26,6 +27,7 @@ class ProviderService: NSObject {
         }
     }
     
+   
     func getServiceData(_ idCountry : String, idFirstPath : String, idSecondPath : String, idNumber : String) -> Promise<JSON>{
         let format = CONSTANTES.LLAMADA.BASE_URL_APPLE_2018
         let arguments : [CVarArg] = [idCountry, idFirstPath, idSecondPath, idNumber]
