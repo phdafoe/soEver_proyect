@@ -13,7 +13,7 @@ import Alamofire
 
 class ProviderService: NSObject {
 
-    @available(*, deprecated, message : "data not found")
+    @available(*, deprecated, message : "data not complete only in topmovie")
     func getServiceData(_ idName: String, idCountry : String, idNumber : String) -> Promise<JSON>{
         
         let format = CONSTANTES.LLAMADA.BASE_URL_APPLE
