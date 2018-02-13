@@ -30,6 +30,12 @@ class HerramientaPostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableViewAutomaticDimension
+        myDescriptionPost.delegate = self
+        
+        
+        
         //Bloque toolbar
         let barraFlexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
                                             target: nil,
@@ -39,8 +45,8 @@ class HerramientaPostTableViewController: UITableViewController {
         
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 0, height: 44))
         toolBar.barStyle = UIBarStyle.blackOpaque
-        toolBar.tintColor = colorBarra
-        toolBar.barTintColor = colorButtons
+        toolBar.tintColor = colorButtons
+        toolBar.barTintColor = colorBarra
         
         let camera = UIBarButtonItem(image: #imageLiteral(resourceName: "camara"),
                                      style: .done,
@@ -63,9 +69,6 @@ class HerramientaPostTableViewController: UITableViewController {
         let gestureRecog = UITapGestureRecognizer(target: self,
                                                   action: #selector(hideKeyboard))
         tableView.addGestureRecognizer(gestureRecog)
-        
-
-        
     }
     
     
@@ -107,15 +110,15 @@ extension HerramientaPostTableViewController : UIImagePickerControllerDelegate, 
     func muestraMenu(){
         let menuVC = UIAlertController(title: nil,
                                        message: nil, preferredStyle: .actionSheet)
-        menuVC.addAction(UIAlertAction(title: "CANCELAR",
+        menuVC.addAction(UIAlertAction(title: "Cancel",
                                        style: .cancel, 
                                        handler: nil))
-        menuVC.addAction(UIAlertAction(title: "CAMARA DE FOTOS",
+        menuVC.addAction(UIAlertAction(title: "Camera",
                                        style: .default,
                                        handler: { _ in
                                         self.muestraCamaraFotos()
         }))
-        menuVC.addAction(UIAlertAction(title: "LIBRERIA DE FOTOS",
+        menuVC.addAction(UIAlertAction(title: "Photo Library",
                                        style: .default,
                                        handler: { _ in
                                         self.muestraLibreria()
@@ -146,9 +149,46 @@ extension HerramientaPostTableViewController : UIImagePickerControllerDelegate, 
         }
         dismiss(animated: true, completion: nil)
     }
+}
+
+
+//MARK: - DELEGATE UITEXTVIEW
+extension HerramientaPostTableViewController : UITextViewDelegate{
     
     
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.black
+            self.navigationController?.setToolbarHidden(true, animated: true)
+        }
+    }
     
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "¿Qué está pasando?"
+            textView.textColor = UIColor.lightGray
+            self.navigationController?.setToolbarHidden(false, animated: true)
+        }
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let maxtext: Int = 2000
+        let comoVoy = myDescriptionPost.text.count + (text.count - range.length)
+        //myContadorNegativoLBL.text = String(2000 - comoVoy)
+        return comoVoy < maxtext
+        
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        let currentOffset = tableView.contentOffset
+        UIView.setAnimationsEnabled(false)
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        UIView.setAnimationsEnabled(true)
+        tableView.setContentOffset(currentOffset, animated: false)
+        
+    }
     
 }
 

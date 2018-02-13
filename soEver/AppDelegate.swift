@@ -47,20 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func customUI(){
         let navBar = UINavigationBar.appearance()
         let tabBar = UITabBar.appearance()
-        let toolBar = UIToolbar.appearance()
-        
         navBar.barTintColor = CONSTANTES.COLORES.COLOR_NAV_TAB
         tabBar.barTintColor = CONSTANTES.COLORES.COLOR_NAV_TAB
-        
-        toolBar.barTintColor = CONSTANTES.COLORES.COLOR_NAV_TAB
-        toolBar.tintColor = CONSTANTES.COLORES.COLOR_TEXT_NAV
-        
         navBar.tintColor = CONSTANTES.COLORES.COLOR_TEXT_NAV
         tabBar.tintColor = CONSTANTES.COLORES.COLOR_TEXT_NAV
-        
         navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : CONSTANTES.COLORES.COLOR_TEXT_NAV]
-        
-        
     }
 
 
