@@ -64,6 +64,7 @@ class HerramientaPostTableViewController: UITableViewController {
         myImageProfile.image = #imageLiteral(resourceName: "steve_jobs")
         myNameProfile.text = "@so.ever123465"
         let customDate = DateFormatter()
+        customDate.dateFormat = "dd/MM/yyyy"
         myDatePost.text = customDate.string(from: fechaHumano)
         
         let gestureRecog = UITapGestureRecognizer(target: self,
