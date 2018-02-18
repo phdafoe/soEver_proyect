@@ -14,11 +14,13 @@ let CONSTANTES = Constantes()
 var jsonDataGenerico : JSON?
 var diccionarioImagenes = [String : UIImage?]()
 var imagenSeleccionada : UIImage?
+typealias arrayDictionay = [[String : Any]]
 
 struct Constantes {
     let COLORES = Colores()
     let LLAMADA = Llamadas()
     let ARGUMENTOS = Argumentos()
+    let NSUSERDEFAULT = CustomUserDefault ()
 }
 
 struct Colores {
@@ -40,8 +42,22 @@ struct Argumentos {
     let MOVIES_SECOND_PATH = "top-movies"
     let VIDEOS_FIRST_PATH = "music-videos"
     let VIDEOS_SECOND_PATH = "top-music-videos"
-
-
 }
+
+struct CustomUserDefault {
+    let USER_DEFAULT = UserDefaults.standard
+    let KEY_DESCRIP_POST = "descripcion"
+    let KEY_IMAGE_POST = "imagen"
+}
+
+
+
+
+
+
+
+
+
+
 
 

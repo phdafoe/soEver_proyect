@@ -37,6 +37,7 @@
 		B4BF4EAF2028D00500DC2EEE /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */; };
 		B4D644CD2031F5BA009AE328 /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D644CC2031F5BA009AE328 /* HomeNavigationViewController.swift */; };
 		B4D644CF2031F662009AE328 /* HerramientaPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D644CE2031F662009AE328 /* HerramientaPostTableViewController.swift */; };
+		B4D83D5220334605000F6403 /* API_TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D83D5120334605000F6403 /* API_TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		B4BF4EAE2028D00500DC2EEE /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
 		B4D644CC2031F5BA009AE328 /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
 		B4D644CE2031F662009AE328 /* HerramientaPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerramientaPostTableViewController.swift; sourceTree = "<group>"; };
+		B4D83D5120334605000F6403 /* API_TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */,
 				B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */,
 				B43C0946202A116600DEE851 /* EVERISRellenarCeldas.swift */,
+				B4D83D5120334605000F6403 /* API_TaskManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				B48DDB4B201F93380099BE17 /* AppDelegate.swift in Sources */,
 				B426F59D2022305200A152A6 /* GenericCell.swift in Sources */,
 				B426F599202226AA00A152A6 /* WebViewGenericoViewController.swift in Sources */,
+				B4D83D5220334605000F6403 /* API_TaskManager.swift in Sources */,
 				B46C81562028BCC900E89122 /* GenericModel.swift in Sources */,
 				B4BF4EA92028C3A500DC2EEE /* API_HELPERS.swift in Sources */,
 				B46C81542028B86600E89122 /* API_UTILS.swift in Sources */,
@@ -500,12 +504,14 @@
 			baseConfigurationReference = 8887A4AEE0F4B2195154D0B9 /* Pods-soEver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C7W4RF846;
 				INFOPLIST_FILE = soEver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.soEver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -516,12 +522,14 @@
 			baseConfigurationReference = 0DB5630262669ED9E02484EA /* Pods-soEver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C7W4RF846;
 				INFOPLIST_FILE = soEver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.iOS.soEver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

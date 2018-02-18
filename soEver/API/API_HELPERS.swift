@@ -51,6 +51,16 @@ public func randomLorem() -> String{
     return arrayLorem.first!
 }
 
+
+
+
+public func muestraAlertController (_ myTitle : String, myMessage : String, array : [UIAlertAction]?) -> UIAlertController{
+    let alert = UIAlertController(title: myTitle, message: myMessage, preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    return alert
+}
+
 extension Array {
     mutating func shuffle() {
         for _ in indices {

@@ -30,6 +30,8 @@ class HerramientaPostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //print(Bundle.main)
+        
         tableView.estimatedRowHeight = 60
         tableView.rowHeight = UITableViewAutomaticDimension
         myDescriptionPost.delegate = self
@@ -91,7 +93,22 @@ class HerramientaPostTableViewController: UITableViewController {
     }
     
     @objc func saveDateWithSingleton(){
-        dismiss(animated: true, completion: nil)
+        
+        if myDescriptionPost.text != "" && myImagePost.image != nil{
+            let imageData = UIImageJPEGRepresentation(myImagePost.image!, 0.1)
+            APiTaskManager.shared.descripcionText.append([CONSTANTES.NSUSERDEFAULT.KEY_DESCRIP_POST : myDescriptionPost.text as String])
+            APiTaskManager.shared.fotoPost.append([CONSTANTES.NSUSERDEFAULT.KEY_IMAGE_POST : imageData as! Data])
+            dismiss(animated: true, completion: nil)
+            APiTaskManager.shared.salvarDatos()
+        }else{
+        present(muestraAlertController("Heyeeee",
+                                       myMessage: "rellena campos",
+                                       array: nil),
+                animated: true,
+                completion: nil)
+        }
+        
+        
     }
     
 

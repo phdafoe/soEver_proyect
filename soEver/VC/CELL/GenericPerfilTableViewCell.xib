@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MiPerfilCustomCell" rowHeight="305" id="KGk-i7-Jjw" customClass="MiPerfilCustomCell" customModule="soEver" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="305" id="KGk-i7-Jjw" customClass="GenericPerfilTableViewCell" customModule="soEver" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="305"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -123,17 +123,6 @@
                     <constraint firstAttribute="bottom" secondItem="Wkn-I2-nBp" secondAttribute="bottom" constant="-0.5" id="xaw-XI-TTl"/>
                 </constraints>
             </tableViewCellContentView>
-            <connections>
-                <outlet property="degradadoFondo" destination="q7T-NS-zlP" id="UKg-MM-8OK"/>
-                <outlet property="degradadoFoto" destination="mmS-z0-9Hq" id="Svb-X5-DeR"/>
-                <outlet property="myBotonAjustesPerfilUsuario" destination="bL5-Uy-N1B" id="p7M-UX-I5a"/>
-                <outlet property="myFondoDegradadoFotoPerfil" destination="mmS-z0-9Hq" id="NXG-Pn-tsk"/>
-                <outlet property="myFotoFondoPerfil" destination="UbA-93-gio" id="j4s-yV-UXd"/>
-                <outlet property="myFotoPerfilUsuario" destination="Mu4-aX-w0f" id="2wv-VZ-cUq"/>
-                <outlet property="myNombrePerfilUsuario" destination="Jmj-TP-Fmd" id="SmH-Ut-SkK"/>
-                <outlet property="myUsernameSportReviewLBL" destination="wQe-iD-2xC" id="Bam-fR-yTQ"/>
-                <outlet property="myUsuarioGenerales" destination="dWI-rN-WtH" id="Lnf-Ru-tHE"/>
-            </connections>
             <point key="canvasLocation" x="193" y="294.5"/>
         </tableViewCell>
     </objects>
