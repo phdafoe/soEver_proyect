@@ -77,7 +77,7 @@ public func muestraAlertController (_ myTitle : String, myMessage : String, arra
     return alert
 }
 
-// MARK: - <#Description#>
+// MARK: - extension array
 extension Array {
     mutating func shuffle() {
         for _ in indices {
