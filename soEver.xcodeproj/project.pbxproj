@@ -128,8 +128,7 @@
 		B426F58B202223F200A152A6 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B46C81532028B86600E89122 /* API_UTILS.swift */,
-				B4BF4EA82028C3A500DC2EEE /* API_HELPERS.swift */,
+				B4A6292D2039E74B00B247EE /* Utils */,
 				B4BF4EAA2028C7ED00DC2EEE /* ProviderService.swift */,
 				B4BF4EAC2028CB5F00DC2EEE /* ParserGenerico.swift */,
 				B43C0946202A116600DEE851 /* EVERISRellenarCeldas.swift */,
@@ -152,13 +151,6 @@
 				B4D644CE2031F662009AE328 /* HerramientaPostTableViewController.swift */,
 			);
 			path = VC;
-			sourceTree = "<group>";
-		};
-		B426F58D2022240400A152A6 /* UTILS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UTILS;
 			sourceTree = "<group>";
 		};
 		B426F59A20222FDD00A152A6 /* CELL */ = {
@@ -195,7 +187,6 @@
 		B48DDB49201F93380099BE17 /* soEver */ = {
 			isa = PBXGroup;
 			children = (
-				B426F58D2022240400A152A6 /* UTILS */,
 				B426F58C202223FE00A152A6 /* VC */,
 				B426F58B202223F200A152A6 /* API */,
 				B426F58A202223E500A152A6 /* Models */,
@@ -206,6 +197,15 @@
 				B48DDB56201F93380099BE17 /* Info.plist */,
 			);
 			path = soEver;
+			sourceTree = "<group>";
+		};
+		B4A6292D2039E74B00B247EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B46C81532028B86600E89122 /* API_UTILS.swift */,
+				B4BF4EA82028C3A500DC2EEE /* API_HELPERS.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
