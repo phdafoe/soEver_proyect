@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 import SwiftyJSON
 
+/// <#Description#>
 let CONSTANTES = Constantes()
 var jsonDataGenerico : JSON?
 var diccionarioImagenes = [String : UIImage?]()
 var imagenSeleccionada : UIImage?
 typealias arrayDictionay = [[String : Any]]
 
+/// <#Description#>
 struct Constantes {
     let COLORES = Colores()
     let LLAMADA = Llamadas()
@@ -23,16 +25,19 @@ struct Constantes {
     let NSUSERDEFAULT = CustomUserDefault ()
 }
 
+/// <#Description#>
 struct Colores {
     let COLOR_NAV_TAB = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
     let COLOR_TEXT_NAV = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 }
 
+/// <#Description#>
 struct Llamadas {
     let BASE_URL_APPLE = "https://itunes.apple.com/%@/rss/%@/limit=%@/json"
     let BASE_URL_APPLE_2018 = "https://rss.itunes.apple.com/api/v1/%@/%@/%@/all/%@/explicit.json"
 }
 
+/// <#Description#>
 struct Argumentos {
     let APPS_IOS_FIRST_PATH = "ios-apps"
     let APPS_IOS_SECOND_PATH = "new-apps-we-love"
@@ -44,6 +49,7 @@ struct Argumentos {
     let VIDEOS_SECOND_PATH = "top-music-videos"
 }
 
+/// <#Description#>
 struct CustomUserDefault {
     let USER_DEFAULT = UserDefaults.standard
     let KEY_DESCRIP_POST = "descripcion"

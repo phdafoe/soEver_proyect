@@ -26,12 +26,18 @@ public func dimeString(_ json: JSON, nombre : String) -> String{
 }
 
 
+/// <#Description#>
+///
+/// - Returns: <#return value description#>
 public func randomIdNumber() -> String{
     let arrayNumber = 1 + Int(arc4random_uniform(100))
     return "\(arrayNumber)"
 }
 
 
+/// <#Description#>
+///
+/// - Returns: <#return value description#>
 public func randomIdCountry() -> String{
     var arraCountr = ["es", "us", "fr", "it"]
     print("Original: \(arraCountr)")
@@ -39,6 +45,9 @@ public func randomIdCountry() -> String{
     return arraCountr.first!
 }
 
+/// <#Description#>
+///
+/// - Returns: <#return value description#>
 public func randomLorem() -> String{
     var arrayLorem = ["Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
                       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)",
@@ -54,6 +63,13 @@ public func randomLorem() -> String{
 
 
 
+/// <#Description#>
+///
+/// - Parameters:
+///   - myTitle: <#myTitle description#>
+///   - myMessage: <#myMessage description#>
+///   - array: <#array description#>
+/// - Returns: <#return value description#>
 public func muestraAlertController (_ myTitle : String, myMessage : String, array : [UIAlertAction]?) -> UIAlertController{
     let alert = UIAlertController(title: myTitle, message: myMessage, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -61,6 +77,7 @@ public func muestraAlertController (_ myTitle : String, myMessage : String, arra
     return alert
 }
 
+// MARK: - <#Description#>
 extension Array {
     mutating func shuffle() {
         for _ in indices {
