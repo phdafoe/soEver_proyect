@@ -39,11 +39,13 @@ class PeliculasViewController: UIViewController {
         
     }
     
+   
     @objc func refreshMovies(){
         llamadaGenerica()
         self.refresh.endRefreshing()
     }
     
+   
     func llamadaGenerica(){
         let provider = ProviderService()
         let parser = ParserGenerico()
